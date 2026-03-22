@@ -3,14 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact Page</title>
   </head>
   <body>
-    <h2>MY CONTACT</h2>
-        <p>Email: diksha98620@gmail.com</p>
-        <p>Github: <a href="https://github.com/Dkshaa">Github</a></p>
-        <p>Email: diksha98620@gmail.com</p>
-        <p>Contact: (510) 387 6576</p><hr />
-        <a href="./index.html">Go Back</a>
+    <h2><mark>CONTACT INFORMATION</mark></h2>
+
+    <fieldset>
+      <legend>My Info</legend>
+      <p><strong>Email: </strong>diksha98620@gmail.com</p>
+      <p><strong>Phone : </strong>(510) 387 6576</p>
+      <a href="https://github.com/Dkshaa" target="_blank">Github</a>
+      <a href="https://instagram.com/me_dikshaaa" target="_blank">Instagram</a>
+    </fieldset>
+    <br />
+
+    <h3><mark>CONTACT FORM</mark></h3>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value=""
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+
+        <label for="eml">Email :</label>
+        <input
+          type="email"
+          id="eml"
+          name="email"
+          value=""
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+
+        <label for="nbr">Phone Number :</label>
+        <input
+          type="tel"
+          id="nbr"
+          name="nbr"
+          value=""
+          placeholder="510 456 3678"
+          minlength="10"
+          maxlength="10"
+          required
+        /><br /><br />
+
+        <label for="cntry">Select Your Country :</label>
+        <select id="cntry" name="'">
+          <option value="nep">Nepal</option>
+          <option value="us" selected>United States</option>
+          <option value="aus">Australia</option>
+          <option value="can">Canada</option>
+          <option value="jpn">Japan</option></select
+        ><br /><br />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Gender & Interests</legend>
+
+        <label for="gen">Male</label>
+        <input type="radio" id="gen" name="gender" />
+
+        <label for="gen">Female</label>
+        <input type="radio" id="gen" name="gender" />
+
+        <label for="gen">Other</label>
+        <input type="radio" id="gen" name="gender" /><br /><br />
+
+        <input type="checkbox" id="sk" name="skill" value="skills" />
+        <label for="sk">Skills</label>
+        <input type="checkbox" id="int" name="interest" value="interests" />
+        <label for="int">Interests</label>
+        <input type="checkbox" id="hob" name="hobby" value="hobbies" />
+        <label for="hob">Hobbies</label><br /><br />
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Feedback and Suggestions</legend>
+        <textarea
+          style="padding: 10px"
+          rows="15"
+          columns="40"
+          placeholder="Please write Your feedback here"
+          maxlength="200"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
